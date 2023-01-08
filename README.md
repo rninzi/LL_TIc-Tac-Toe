@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+### 이번 프로젝트는 React를 이용한 TicTacToe 구현하기입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+#### Tic-Tac-Toe란?
 
-In the project directory, you can run:
+```
+|___|___|___|
+|___|___|___|
+|   |   |   |
 
-### `yarn start`
+|_O_|___|___|
+|___|___|_X_|
+|   |   |   |
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 위처럼 가로 세로 3칸씩 그려진 판에서 두 명의 플레이어가 순서대로 자신의 말을 하나씩 두는 방식으로 게임이 진행됩니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 9개의 칸에 가로,세로,대각선 중 자신의 말을 먼저 3개 배열하면 승리합니다.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 커밋 컨벤션
 
-### `yarn build`
+| 커밋명   | 내용                                |
+| -------- | ----------------------------------- |
+| feat     | 기능 개발                           |
+| fix      | 버그 수정                           |
+| refactor | 코드 또는 폴더 구조 리팩토링        |
+| style    | 코드 변경 없는 수정                 |
+| design   | css와 같은 스타일 및 ui 디자인 변경 |
+| docs     | 단순 문서(read me) 수정             |
+| comment  | 필요한 주석 추가 및 변경            |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+기능 구현은 _feature_ branch에서 진행됩니다.
