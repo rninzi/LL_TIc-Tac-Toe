@@ -11,10 +11,11 @@ const BlockBtn = styled.div`
   text-align: center;
   line-height: 100px;
 `;
-const Block = ({ playerMarker, changePlayer }) => {
+const Block = ({ index, playerMarker, changePlayer }) => {
   const [marker, setMarker] = useState("");
 
   const onBlockClick = () => {
+    console.log(index);
     if (marker === "") {
       // 블럭 마커 표시 여부 판별 (중복 방지)
       setMarker(playerMarker);

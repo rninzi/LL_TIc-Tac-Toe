@@ -24,13 +24,24 @@ const Board = () => {
       setMarker("X");
     }
   };
-  const gameBoard = Array.from(Array(3), () =>
-    Array(3).fill(
-      <Block playerId={id} playerMarker={marker} changePlayer={changePlayer} />
-    )
-  );
+  const gameBoard = Array.from(Array(9), (_, index) => (
+    <Block index={index} playerMarker={marker} changePlayer={changePlayer} />
+  ));
+  // 1차원 형태의 gameBoard 3*3 형태로 나누기 위해 긁어온 코드... 새로운 방식의 접근이 필요할 거 같다.
+  Array.prototype.division = function (n) {
+    const arr = this;
+    const len = arr.length;
+    const cnt = Math.floor(len / n);
+    const tmp = [];
 
-  const showBoard = gameBoard.map((item) => <BoardRow>{item}</BoardRow>);
+    for (let i = 0; i <= cnt; i++) {
+      tmp.push(arr.splice(0, n));
+    }
+
+    return tmp;
+  };
+  const divideBoard = gameBoard.division(3);
+  const showBoard = divideBoard.map((item) => <BoardRow>{item}</BoardRow>);
 
   return (
     <>
