@@ -1,5 +1,5 @@
 // borad의 구성요소가 되는 한 칸(블럭)
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import styled from "styled-components";
 import { boardInfo } from "../atom/boardInfo";
