@@ -1,5 +1,5 @@
 import { RecoilRoot } from "recoil";
-import TicTacToe from "./components/TicTacToe";
+import TicTacToe from "./pages/TicTacToe";
 
 function App() {
   return (
