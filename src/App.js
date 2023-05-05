@@ -1,10 +1,11 @@
-import TicTacToe from "./components/TicTacToe";
+import { RecoilRoot } from "recoil";
+import TicTacToe from "./pages/TicTacToe";
 
 function App() {
   return (
-    <div className="App">
+    <RecoilRoot>
       <TicTacToe />
-    </div>
+    </RecoilRoot>
   );
 }
 
